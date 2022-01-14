@@ -37,6 +37,10 @@ function generatePassword() {
   if (specialCharacters) {
     answers = answers.concat(specialchar);
   }
+  else {
+    alert("Please select at least one character type.");
+    
+  }
 
   for (var i = 0; i < passwordlength; i++) {
     pword.push(answers[Math.floor(Math.random() * answers.length)]);
